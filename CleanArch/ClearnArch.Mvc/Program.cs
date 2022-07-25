@@ -1,4 +1,5 @@
 using CleanArch.Infra.Data.Context;
+using CleanArch.Infra.IoC;
 using ClearnArch.Mvc.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,8 @@ builder.Services.AddRazorPages();
 var connectionString1=builder.Configuration.GetConnectionString("UniversityDbConnection");
 builder.Services.AddDbContext<UniversityDBContext>(options =>
 options.UseSqlServer(connectionString1, b => b.MigrationsAssembly("CleanArch.Infra.Data")));
+
+RegisterService(builder.Services);
 
 var app = builder.Build();
 
@@ -46,3 +49,8 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+static void RegisterService(IServiceCollection services)
+{
+    DependencyContainer.RegisterServices(services);
+}
