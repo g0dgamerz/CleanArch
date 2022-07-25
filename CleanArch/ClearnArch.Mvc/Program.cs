@@ -15,6 +15,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
+builder.Services.AddControllers(options => options.EnableEndpointRouting=false);
 
 
 
@@ -46,7 +47,9 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.UseMvc(routes => routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}"));
 
 app.Run();
 
