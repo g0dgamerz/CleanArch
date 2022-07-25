@@ -1,5 +1,6 @@
 ﻿using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArch.Mvc.Controllers
