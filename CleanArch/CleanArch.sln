@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A7E812
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{AFECF25B-814C-424A-A8F1-B6A4B56EA6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{A0126A86-513A-4636-8D60-50E889BC3E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{A0126A86-513A-4636-8D60-50E889BC3E1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{9B33D227-1F21-45E1-8F3B-C424A2BA00E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{A0126A86-513A-4636-8D60-50E889BC3E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0126A86-513A-4636-8D60-50E889BC3E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0126A86-513A-4636-8D60-50E889BC3E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B33D227-1F21-45E1-8F3B-C424A2BA00E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B33D227-1F21-45E1-8F3B-C424A2BA00E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B33D227-1F21-45E1-8F3B-C424A2BA00E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B33D227-1F21-45E1-8F3B-C424A2BA00E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{818DBF2A-0F72-44E9-AD8A-5F66786C6EEC} = {B4853F9B-569C-4935-B6EE-13CF65DAECEF}
 		{AFECF25B-814C-424A-A8F1-B6A4B56EA6A3} = {A7E812F9-D7AC-4CED-BCA9-52E44375D08A}
 		{A0126A86-513A-4636-8D60-50E889BC3E1C} = {6C5D62F8-7AB1-4EBF-9A91-464286837EAE}
+		{9B33D227-1F21-45E1-8F3B-C424A2BA00E3} = {6C55ECF2-737D-42D7-B069-05367E50DCA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB0C8976-58C2-4CEB-B448-F561BF801EC5}
